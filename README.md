@@ -3,7 +3,6 @@
 ~~~
   let evalStr = require('./index')
 
-
   evalStr('1 + 2 == 3') // { judge: true }
   evalStr('1 + 2 == 4') // { judge: false }
   evalStr('1 + 2 == 3 && 3 * 5 > 10') // { judge: true }
