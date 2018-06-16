@@ -20,16 +20,12 @@
 ~~~
 ~~~
   let data = {
-      name: 'kaneko',
-      year: 23,
-      hobby: ['compose'],
-      date: {
-          month: 8
-      }
+      id: 'aaa',
+      num: 7,
   }
 
-  evalStr('name == kaneko', data) // { judge: true }
-  evalStr('name == kaneko && year < 20', data) // { judge: true }
+  console.log(evalStr('id == aaa', data))
+  console.log(evalStr('id == aa && num < 10', data))
 ~~~
 
 

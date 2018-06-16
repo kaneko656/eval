@@ -16,9 +16,9 @@ console.log(evalStr(new Date().getSeconds() + '% 2 == 0')) // unknown
 console.log(evalStr('aaa == aaa')) // String
 
 let data = {
-    name: 'kaneko',
-    year: 23,
+    id: 'aaa',
+    num: 7,
 }
 
-console.log(evalStr('name == kaneko', data))
-console.log(evalStr('name == kaneko && year > 20', data))
+console.log(evalStr('id == aaa', data))
+console.log(evalStr('id == aa && num < 10', data))
